@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0
+}
+header{
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-family: "Sigmar", serif;
+}
+header h1{
+    font-size: 48px;
+    margin-bottom: 3px;
+
+}
+nav{
+    text-align: center;
+    
+    height: 30px;
+}
+nav a{
+    margin: 0px 15px;
+    text-decoration: none;
+    color: white;
+    font-family: "Sigmar", serif;
+}
+.selectad{
+    border-bottom: 2px solid black;
+    font-weight: bold;
+}
+header p{
+    margin-bottom: 15px;
+}
+nav a:hover{
+    color:orange;
+}
+.video img{
+    width: 200px;
+    height: 200px;
+    display: flex;
+}

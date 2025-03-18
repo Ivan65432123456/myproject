@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0
+}
+header{
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-family: "Shafarik", serif;
+}
+header h1{
+    font-size: 48px;
+    margin-bottom: 3px;
+
+}
+nav{
+    text-align: center;
+    background-color: blue;
+    height: 30px;
+}
+nav a{
+    margin: 0px 15px;
+    text-decoration: none;
+    color: white;
+    font-family: "Shafarik", serif;
+}
+.selectad{
+    border-bottom: 2px solid black;
+    font-weight: bold;
+}
+header p{
+    margin-bottom: 15px;
+}
+nav a:hover{
+    color:orange;
+}
+main{
+    margin-top: 25px;
+    margin-left: 25px;
+}
+main img{
+    width: 200px;
+    height: 300px;
+    border: 3px solid gray;
+    border-radius: 25px;
+    margin-top: 10px;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.popular_film{
+    text-align: center;
+    width: 750px;
+    padding: 0 0 0 5px;
+    float: left;
+}
+.popular_serial{
+    text-align: center;
+    width: 750px;
+    padding: 0 0 0 5px;
+    float: right;
+}
+.new_film{
+    text-align: center;
+    margin-top: 20px;
+}
+.new{
+    display: flex;
+    justify-content: space-between;
+    height: 230px;
+    margin-left: 25px;
+    margin-top: 10px;
+    padding: 20px;
+}
+.paddington{
+    border-radius: 25px;
+    border: 5px solid gray;
+    margin-right: 25px;
+    background-color: white;
+    padding: 10px;
+}
+.paddington_div{
+    height: 100px;
+    padding: 0 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 30px;
+}
+.heidi{
+    border-radius: 25px;
+    border: 5px solid gray;
+    margin-right: 25px;
+    background-color: white;
+    padding: 10px;
+}
+.heidi_div{
+    height: 200px;
+    padding: 0 10px;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+    text-align: center;
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer_item{
+    width: 30%;
+}
+.footer_item h3{
+    border-bottom: 1px solid white;
+    padding-bottom: 10px;
+}
+.footer_item ul{
+    list-style-type: none;
+}
+.footer_item ul li a{
+    color: white;
+    text-decoration: none;
+}
+.footer_item ul li a:hover{
+    color: rgb(113, 146, 184);
+}
+.footer_img{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    gap: 10px;
+}
+.footer_img img:hover{
+    transform: rotate(360deg);
+    transition: transform 1s;
+    width: 30px;
+    height: 30px;
+}
+.footer_two{
+    text-align: center;
+}
+table, th, td{
+    text-align: left;
+}
+th{
+    width: 170px;
+    font-weight: normal;
+    opacity: 0.4;
+}
+.film_content{
+    display: flex;
+}
+.film_information img, .film_information iframe{
+    width: 302px;
+    margin-top: 50px;  
+}
+.film_information img{
+    height: 420px;
+}
+.film_information iframe{
+    height: 170px;
+}
+.review, .about_film{
+    margin-top: 30px;
+    width: 600px;
+}
+.review_header, .roles{
+    line-height: 2.25;
+}
+.header{
+    width: 800px;
+}
+.slide_content{
+    width: 200px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.rate{
+    margin-bottom: 50px;
+}
+.rate-mark{
+    font-weight: bold;
+    color:rgb(197, 184, 6);
+    font-size: 32px;
+}
