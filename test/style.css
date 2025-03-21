@@ -159,14 +159,14 @@ th{
 .film_content{
     display: flex;
 }
-.film_information img, .film_information iframe{
+.poster img, .poster iframe{
     width: 302px;
     margin-top: 50px;  
 }
-.film_information img{
+.poster img{
     height: 420px;
 }
-.film_information iframe{
+.poster iframe{
     height: 170px;
 }
 .review, .about_film{
@@ -189,7 +189,7 @@ th{
 .rate{
     margin-bottom: 50px;
 }
-.rate-mark{
+.rate_mark{
     font-weight: bold;
     color:rgb(197, 184, 6);
     font-size: 32px;
