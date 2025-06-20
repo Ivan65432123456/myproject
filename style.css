@@ -1,0 +1,386 @@
+*{
+    margin: 0;
+    padding: 0
+}
+header{
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-family: "Shafarik", serif;
+    position:static;
+}
+header h1{
+    font-size: 48px;
+    margin-bottom: 3px;
+
+}
+nav{
+    text-align: center;
+    background-color: black;
+    height: 30px;
+    line-height: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+nav{
+    background-color: rgb(181, 197, 249);
+    text-align: center;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.4s ease;
+    display: flex;
+    flex-direction: column;
+}
+.menu1 a{
+    margin: 0px 15px;
+    color: white;
+    font-family: "Shafarik", serif;
+    padding: 8px 0;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    border-top: 1px solid #444
+}
+#menu_toggle{
+    display: none;
+}
+.burger span{
+    height: 4px;
+    background: black;
+    border-radius: 10px;
+    transition: 0.3s;
+    display: block;
+}
+.burger{
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 22px;
+    height: 16px;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    z-index: 2px;
+}
+#menu_toggle:checked + .burger + .menu1{
+    display: flex;
+}
+#menu_toggle:checked + .burger span:nth-child(1){
+    transform: rotate(45deg) translate(5px, 5px)
+}
+#menu_toggle:checked + .burger span:nth-child(2){
+    opacity: 0;
+}
+#menu_toggle:checked + .burger span:nth-child(3){
+    transform: rotate(-45deg) translate(5px, -5px)
+}
+.selectad{
+    border-bottom: 2px solid black;
+    font-weight: bold;
+}
+header p{
+    margin-bottom: 15px;
+}
+nav a:hover{
+    color:orange;
+}
+main{
+    margin-top: 25px;
+    margin-left: 25px;
+}
+main img{
+    width: 200px;
+    height: 300px;
+    border: 3px solid gray;
+    border-radius: 25px;
+    margin-top: 10px;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.popular_film{
+    text-align: center;
+    width: 750px;
+    padding: 0 0 0 5px;
+    float: left;
+}
+.popular_serial{
+    text-align: center;
+    width: 750px;
+    padding: 0 0 0 5px;
+    float: right;
+}
+.new_film{
+    text-align: center;
+    margin-top: 20px;
+}
+.new{
+    display: flex;
+    justify-content: space-between;
+    height: 230px;
+    margin-left: 25px;
+    margin-top: 10px;
+    padding: 20px;
+}
+.paddington{
+    border-radius: 25px;
+    border: 5px solid gray;
+    margin-right: 25px;
+    background-color: white;
+    padding: 10px;
+}
+.paddington_div{
+    height: 100px;
+    padding: 0 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 30px;
+}
+.heidi{
+    border-radius: 25px;
+    border: 5px solid gray;
+    margin-right: 25px;
+    background-color: white;
+    padding: 10px;
+}
+.heidi_div{
+    height: 200px;
+    padding: 0 10px;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+    text-align: center;
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer_item{
+    width: 30%;
+}
+.footer_item h3{
+    border-bottom: 1px solid white;
+    padding-bottom: 10px;
+}
+.footer_item ul{
+    list-style-type: none;
+}
+.footer_item ul li a{
+    color: white;
+    text-decoration: none;
+}
+.footer_item ul li a:hover{
+    color: rgb(113, 146, 184);
+}
+.footer_img{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    gap: 10px;
+}
+.footer_img img:hover{
+    transform: rotate(360deg);
+    transition: transform 1s;
+    width: 30px;
+    height: 30px;
+}
+.footer_two{
+    text-align: center;
+}
+table, th, td{
+    text-align: left;
+}
+th{
+    width: 170px;
+    font-weight: normal;
+    opacity: 0.4;
+    line-height: 2;
+}
+.film_content{
+    display: flex;
+}
+.poster img, .poster iframe{
+    width: 302px;
+    margin-top: 50px;  
+}
+.poster img{
+    height: 420px;
+}
+.poster iframe{
+    height: 170px;
+}
+.review, .about_film{
+    margin-top: 30px;
+    width: 600px;
+}
+.review_header, .roles{
+    line-height: 2.25;
+}
+.header{
+    width: 800px;
+    margin-left: 50px;
+}
+.slide_content{
+    width: 200px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.rate{
+    margin-bottom: 50px;
+}
+.rate_mark{
+    font-weight: bold;
+    color:rgb(197, 184, 6);
+    font-size: 32px;
+}
+.about_film h3{
+    margin-bottom: 15px;
+}
+html, body{
+    height: 100px;
+    margin: 0;
+}
+.all{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+main{
+    flex: 1;
+}
+.contacts{
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.contactsinfo{
+    width: 45%;
+    padding: 10px;
+}
+.contactsinfo h3{
+    font-size: 24px;
+    color:rgb(0, 40, 109);
+    margin-top: 20px;
+}
+.contactsinfo a{
+    color:rgb(0, 26, 70);
+    text-decoration: none;
+}
+.contactsinfo a:hover{
+    text-decoration: underline;
+}
+.officemap{
+    margin-top: 10px;
+    border: 1px solid black
+}
+.feedback{
+    width: 50%;
+    margin-left: 100px;
+}
+.contactform{
+    padding: 10px;
+    border: 1px solid black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1)
+}
+.contactform label,
+.contactform input,
+.contactform textarea{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+.contactform button{
+    background-color: rgb(0, 65, 217);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+.contactform button:hover{
+    background-color:rgb(42, 196, 55)
+}
+@media screen and (max-width: 400px){
+    header h1{
+        font-size: 40px;
+        margin: 0;
+    }
+    main img{
+        height: 175px;
+        width: 100px;
+    }
+    .paddington{
+        padding: 3px;
+        height: 730px;
+        margin-bottom: 30px;
+        margin-top: 0;
+        padding-bottom: 7px;
+    }
+    .new{
+        margin-top: 0;
+        margin-bottom: 5px;
+        height: 780px;
+        margin: 0;
+    }
+    .heidi{
+        height: 730px;
+        padding: 3px;
+        margin-bottom: 30px;
+        margin-top: 0;
+        padding-bottom: 7px;
+        width: 126px;
+        
+    }
+    footer h3{
+        font-size: 16px;
+    }
+    footer p{
+        font-size: 13px;
+    }
+    .footer_item, .footer_two{
+        font-size: 15px;
+    }
+    .burger{
+        display: flex;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+    nav{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        background-color: black;
+        height: auto;
+        padding: 10px;
+    }
+    .menu1{
+        position: absolute;
+        display: none;
+        background: black;
+        left: 0;
+        right: 0;
+        top: 50px;
+    }
+
+}
