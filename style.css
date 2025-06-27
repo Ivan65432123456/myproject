@@ -8,7 +8,6 @@ header{
     padding: 10px;
     text-align: center;
     font-family: "Shafarik", serif;
-    position:static;
 }
 header h1{
     font-size: 48px;
@@ -17,67 +16,14 @@ header h1{
 }
 nav{
     text-align: center;
-    background-color: black;
+    background-color: blue;
     height: 30px;
-    line-height: 30px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 10px;
 }
-nav{
-    background-color: rgb(181, 197, 249);
-    text-align: center;
-    overflow: hidden;
-    max-height: 0;
-    transition: max-height 0.4s ease;
-    display: flex;
-    flex-direction: column;
-}
-.menu1 a{
+nav a{
     margin: 0px 15px;
+    text-decoration: none;
     color: white;
     font-family: "Shafarik", serif;
-    padding: 8px 0;
-    color: white;
-    text-decoration: none;
-    padding: 10px;
-    display: block;
-    border-top: 1px solid #444
-}
-#menu_toggle{
-    display: none;
-}
-.burger span{
-    height: 4px;
-    background: black;
-    border-radius: 10px;
-    transition: 0.3s;
-    display: block;
-}
-.burger{
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 22px;
-    height: 16px;
-    cursor: pointer;
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    z-index: 2px;
-}
-#menu_toggle:checked + .burger + .menu1{
-    display: flex;
-}
-#menu_toggle:checked + .burger span:nth-child(1){
-    transform: rotate(45deg) translate(5px, 5px)
-}
-#menu_toggle:checked + .burger span:nth-child(2){
-    opacity: 0;
-}
-#menu_toggle:checked + .burger span:nth-child(3){
-    transform: rotate(-45deg) translate(5px, -5px)
 }
 .selectad{
     border-bottom: 2px solid black;
@@ -137,7 +83,7 @@ main img{
     padding: 10px;
 }
 .paddington_div{
-    height: 100px;
+    
     padding: 0 10px;
     align-items: center;
     justify-content: center;
@@ -209,7 +155,6 @@ th{
     width: 170px;
     font-weight: normal;
     opacity: 0.4;
-    line-height: 2;
 }
 .film_content{
     display: flex;
@@ -233,7 +178,6 @@ th{
 }
 .header{
     width: 800px;
-    margin-left: 50px;
 }
 .slide_content{
     width: 200px;
@@ -250,137 +194,116 @@ th{
     color:rgb(197, 184, 6);
     font-size: 32px;
 }
-.about_film h3{
-    margin-bottom: 15px;
-}
-html, body{
-    height: 100px;
-    margin: 0;
-}
-.all{
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-main{
-    flex: 1;
-}
-.contacts{
-    width: 90%;
-    margin: 0 auto;
-    padding: 20px 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.contactsinfo{
-    width: 45%;
-    padding: 10px;
-}
-.contactsinfo h3{
-    font-size: 24px;
-    color:rgb(0, 40, 109);
-    margin-top: 20px;
-}
-.contactsinfo a{
-    color:rgb(0, 26, 70);
-    text-decoration: none;
-}
-.contactsinfo a:hover{
-    text-decoration: underline;
-}
-.officemap{
-    margin-top: 10px;
-    border: 1px solid black
-}
-.feedback{
-    width: 50%;
-    margin-left: 100px;
-}
-.contactform{
-    padding: 10px;
-    border: 1px solid black;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1)
-}
-.contactform label,
-.contactform input,
-.contactform textarea{
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    box-sizing: border-box;
-}
-.contactform button{
-    background-color: rgb(0, 65, 217);
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    cursor: pointer;
-}
-.contactform button:hover{
-    background-color:rgb(42, 196, 55)
-}
-@media screen and (max-width: 400px){
-    header h1{
-        font-size: 40px;
-        margin: 0;
-    }
-    main img{
-        height: 175px;
-        width: 100px;
-    }
+@media screen and (max-width: 600px){
     .paddington{
-        padding: 3px;
-        height: 730px;
-        margin-bottom: 30px;
-        margin-top: 0;
-        padding-bottom: 7px;
-    }
-    .new{
-        margin-top: 0;
-        margin-bottom: 5px;
-        height: 780px;
-        margin: 0;
+        height: 250px;
+        padding-top: 10px;
     }
     .heidi{
-        height: 730px;
-        padding: 3px;
-        margin-bottom: 30px;
-        margin-top: 0;
-        padding-bottom: 7px;
-        width: 126px;
-        
+        height: 250px;
+        padding-top: 10px;
     }
-    footer h3{
-        font-size: 16px;
+    .serial img{
+        height: 200px;
+        width: 130px;
     }
-    footer p{
+    .film img{
+        height: 200px;
+        width: 130px;
+    }
+    .new_film{
+        height: 350px;
+    }
+    main{
+        margin-left: 0;
+    }
+    .paddington_div{
+        padding: 0px;
         font-size: 13px;
     }
-    .footer_item, .footer_two{
-        font-size: 15px;
+    .heidi_div{
+        padding: 0px;
+        font-size: 13px;
     }
-    .burger{
-        display: flex;
-        position: absolute;
-        top: 10px;
-        left: 10px;
+    .new{
+        height: 390px;
     }
-    nav{
-        display: none;
-        flex-direction: column;
-        align-items: center;
-        background-color: black;
-        height: auto;
-        padding: 10px;
+}
+@media screen and (max-width: 500px){
+    .paddington{
+        padding-top: 10px;
+        height: 400px;
     }
-    .menu1{
-        position: absolute;
-        display: none;
-        background: black;
-        left: 0;
-        right: 0;
-        top: 50px;
+    .heidi{
+        padding-top: 10px;
+        height: 400px;
+    }
+    .new_film{
+        height: 500px;
+    }
+}
+@media screen and (max-width: 400px) { 
+
+    header h1 { 
+        font-size: 28px; 
     }
 
+    nav a {
+        margin: 0 8px;
+        font-size: 14px;
+    }
+
+    main img {
+        width: 30%;
+        height: auto;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .popular_film,
+    .popular_serial {
+        width: 100%;
+        float: none;
+    }
+
+    .new {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        margin-left: 0;
+    }
+    main{
+        margin-left: 0;
+    }
+    .paddington,
+    .heidi {
+        width: 80%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .paddington_div{
+        padding: 0px;
+    }
+    .heidi{
+        height: 241px;
+    }
+    .heidi_div{
+        padding: 0px;
+    }
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer_item {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .footer_img {
+        justify-content: center;
+    }
 }
