@@ -194,6 +194,78 @@ th{
     color:rgb(197, 184, 6);
     font-size: 32px;
 }
+.poster iframe{
+    width: 560px;
+    height: 315px;
+}
+@media screen and (max-width: 1318px){
+    .menu{
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 1000px){
+    .menu{
+        justify-content: center;
+    }
+    .review p{
+        width: 150px;
+    }
+    .header{
+        width: 200px;
+        margin-left: 20px;
+    }
+    .review, .about_film{
+        width: 300px;
+    }
+}
+@media screen and (max-width: 900px){
+    .paddington_div,
+    .heidi_div{
+        padding-top: 5px;
+    }
+}
+@media screen and (max-width: 850px){
+    .film_content{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 800px){
+    .paddington{
+        height: 300px;
+    }
+    .heidi{
+        height: 300px;
+    }
+    .new{
+        height: 400px;
+    }
+    .paddington_div,
+    .heidi_div{
+        padding-top: 5px;
+    }
+}
+@media screen and (max-width: 700px){
+    .paddington{
+        height: 360px;
+    }
+    .heidi{
+        height: 360px;
+    }
+    .new{
+        height: 400px;
+    }
+    .paddington_div,
+    .heidi_div{
+        padding-top: 5px;
+    }
+}
+@media screen and (max-width: 650px){
+    .film_content{
+        flex-direction: column;
+        align-items: center;
+    }
+}
 @media screen and (max-width: 600px){
     .paddington{
         height: 250px;
@@ -211,7 +283,7 @@ th{
         height: 200px;
         width: 130px;
     }
-    .new_film{
+    .new{
         height: 350px;
     }
     main{
@@ -238,19 +310,36 @@ th{
         padding-top: 10px;
         height: 400px;
     }
-    .new_film{
+    .new{
         height: 500px;
+    }
+    .film_content{
+        flex-direction: column;
+        align-items: center;
+        display: flex;
+    }
+}
+@media screen and (max-width: 450px){
+    .about_film{
+        margin-left: 10px;
+        display: flex;
+    }
+    nav a{
+        font-size: 12px;
     }
 }
 @media screen and (max-width: 400px) { 
 
+    .poster{
+        width: 135px;
+    }
     header h1 { 
         font-size: 28px; 
     }
 
     nav a {
         margin: 0 8px;
-        font-size: 14px;
+        font-size: 12px;
     }
 
     main img {
@@ -283,19 +372,26 @@ th{
         width: 80%;
         margin-right: 0;
         margin-bottom: 20px;
+        height: 250px;
     }
     .paddington_div{
         padding: 0px;
-    }
-    .heidi{
-        height: 241px;
+        font-size: 15px;
+        padding-top: 10px;
     }
     .heidi_div{
         padding: 0px;
+        font-size: 15px;
+        padding-top: 10px;
     }
     footer {
         flex-direction: column;
         text-align: center;
+    }
+    .trailer{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
     }
 
     .footer_item {
@@ -306,4 +402,19 @@ th{
     .footer_img {
         justify-content: center;
     }
+    .film_content img{
+        height: 200px;
+        width: 130px;
+    }
+    .poster iframe{
+        height: 150px;
+        width: 300px;
+    }
+    .film_content{
+        align-items: center;
+    }
+    .header{
+        display: flex;
+    }
+
 }
