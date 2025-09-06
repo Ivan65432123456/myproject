@@ -1,0 +1,34 @@
+body{
+    background: linear-gradient(to bottom, #C9E7FF, #A9FFD0);
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.h1text{
+    font-size: 20px;
+    background-color: white;
+    border-radius: 20px;
+    width: 45%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+p{
+    font-size: 20px;
+}
+input{
+    width: 600px;
+    height: 30px;
+    border-radius: 1px solid #ccc;
+}
+.question2{
+    background-color: white;
+    border-radius: 25px;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
