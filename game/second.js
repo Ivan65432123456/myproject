@@ -22,10 +22,13 @@ checkbtn.addEventListener("click", function(){
     let useranswer = answerinput.value.toLowerCase().trim()
     if(useranswer === quiz[corectquestindex].answer){
         resultelem.textContent = "Правильно!"
+        resultelem.style.fontSize = "30px"
         resultelem.style.color = "green"
         score ++
     }else{
         resultelem.textContent = `Неправильно. Правильный ответ: ${quiz[corectquestindex].answer}`
+        resultelem.style.fontSize = "18px"
+        resultelem.style.transition = "font-size 2s ease"
         resultelem.style.color = "red"
     }
     setTimeout(function(){
@@ -41,9 +44,9 @@ function endgame(){
     questionelem.textContent = "Отличная игра!"
     resultelem.textContent = `Вы набрали ${score} из ${quiz.length} балов`
     answerinput.style.display = "none"
+    texth1.style.transition = "font-size 3s ease, width 1s"
+    texth1.style.fontSize = "10px"
+    texth1.style.width = "15%"
     checkbtn.style.display = "none"
 }
 window.onload = showQuestion
-if(questionelem.textContent === "Отличная игра!"){
-    texth1.style.fontSize = "10px"
-}
