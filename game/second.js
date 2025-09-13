@@ -25,6 +25,9 @@ checkbtn.addEventListener("click", function(){
         resultelem.style.fontSize = "30px"
         resultelem.style.color = "green"
         score ++
+        setTimeout(() => {
+            resultelem.style.fontSize = "18px"
+        }, 1500);
     }else{
         resultelem.textContent = `Неправильно. Правильный ответ: ${quiz[corectquestindex].answer}`
         resultelem.style.fontSize = "18px"
@@ -48,5 +51,67 @@ function endgame(){
     texth1.style.fontSize = "10px"
     texth1.style.width = "15%"
     checkbtn.style.display = "none"
+    startfirework()
+}
+function startfirework(){
+    const canvas = document.getElementById("confeticanvas")
+    const context = canvas.getContext("2d")
+    const number = 300
+    const confeti = []
+    function Confeti(){
+        this.x = Math.random() * canvas.width
+        this.y = Math.random() * canvas.height - canvas.height
+        this.r = Math.floor(Math.random() * 6) + 1
+        this.d = Math.random() * number
+        this.color = `rgb(${Math.floor(Math.random() * 256)},
+                          ${Math.floor(Math.random() * 256)},
+                          ${Math.floor(Math.random() * 256)})`
+        this.tilt = Math.floor(Math.random() * 10) - 5
+        this.draw = function(){
+            context.beginPath()
+            context.lineWidth = this.r
+            context.strokeStyle = this.color
+            context.moveTop(this.x + this.tilt + this.r / 3, this.y)
+            context.lineTop(this.x + this.tilt, this.y + this.tilt + this.r / 3)
+            context.stroke()
+        }
+    }
+    function draw(){
+        context.clearRect(0, 0, canvas.width, canvas.height)
+        for(var i = 0; i < number; i ++){
+            confeti[i].draw()
+        }
+        update()
+    }
+    function update(){
+        var angle = 0
+        angle += 0.1
+        for(var i = 0; i < number; i ++){
+            let confet = confeti[i]
+            confet.y += Math.cos(angle + confet.d) + 1 + confet.r / 2
+            confet.x += Math.sin(angle) * 2
+            if(confet.x > canvas.width + 5 || confet.x < -5 || confet.y > canvas.height){
+                if(i %3 < 0){
+                    confeti[i] = new Confeti()
+                    confeti[i].x = Math.random() * canvas.width
+                    confeti[i].y = -10
+                }else{
+                    if(Math.sin(angle)> 0){
+                        confeti[i] = new Confeti()
+                        confeti[i].x = - 5
+                        confeti[i].y = Math.random() * canvas.height
+                    }else{
+                        conveti[i] = new Confeti()
+                        confeti[i].x = canvas.width + 5
+                        confeti[i].y = Math.random() * canvas.height
+                    }
+                }
+            }
+        }
+    }
+    for(var i = 0; i < number; i++){
+        confeti.push(new Confeti())
+    }
+    setInterval(draw, 20)
 }
 window.onload = showQuestion
