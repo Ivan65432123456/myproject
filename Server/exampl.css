@@ -1,0 +1,99 @@
+.model{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 400ms ease-in-out;
+    pointer-events: none;
+}
+.model:target{
+    opacity: 1;
+    pointer-events: auto;
+}
+.model_content{
+    position: relative;
+    width: 50%;
+    max-width: 600px;
+    margin: 10% auto;
+    background: white;
+    border-radius: 3px;
+}
+.close{
+    position: absolute;
+    top: 10;
+    right: 20px;
+    text-decoration: none;
+    font-size: 24px;
+}
+.close:hover{
+    color: red;
+}
+.hover_button{
+    background-color: rgb(76, 47, 239);
+    color: white;
+    padding: 10px;
+    transition: background-color 3s, color 3s;
+}
+.hover_button:hover{
+    background-color: red;
+    color: black;
+}
+.hover_card{
+    width: 200px;
+    height: 150px;
+    background-color: #f5f5f5;
+    transition: box-shadow 0.3s;
+}
+.hover_card:hover{
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 5);
+    background-color: rgb(229, 248, 252);
+}
+.hover_line{
+    position: relative;
+    text-decoration: none;
+    color: #0077CC;
+}
+.hover_line::before{
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #0077CC;
+    transition: width 0.3s;
+}
+.hover_line:hover::before{
+    width: 100%;
+}
+.img_box{
+    position: relative;
+    width: 200px;
+    height: 300px;
+    overflow: hidden;
+}
+.img_box img{
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.3s;
+}
+.text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    color: black;
+    font-weight: bolt;
+    transition: opacity 0.3s;
+}
+.img_box:hover img{
+    opacity: 0.5;
+}
+.img_box:hover .text{
+    opacity: 1;
+}

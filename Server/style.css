@@ -1,0 +1,488 @@
+*{
+    margin: 0;
+    padding: 0
+}
+header{
+    background-color: rgb(192, 171, 38);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-family: "Shafarik", serif;
+}
+header h1{
+    font-size: 48px;
+    margin-bottom: 3px;
+
+}
+nav{
+    text-align: center;
+    background-color: rgb(192, 171, 38);
+    height: 30px;
+}
+nav a{
+    margin: 0px 15px;
+    text-decoration: none;
+    color: white;
+    font-family: "Shafarik", serif;
+}
+.selectad{
+    border-bottom: 2px solid black;
+    font-weight: bold;
+}
+header p{
+    margin-bottom: 15px;
+}
+nav a:hover{
+    color:orange;
+}
+main{
+    margin-top: 25px;
+    margin-left: 25px;
+}
+main img{
+    width: 200px;
+    height: 300px;
+    border: 3px solid rgb(192, 171, 38);
+    border-radius: 25px;
+    margin-top: 10px;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.popular_film{
+    text-align: center;
+    width: 750px;
+    padding: 0 0 0 5px;
+    float: left;
+}
+.popular_serial{
+    text-align: center;
+    width: 750px;
+    padding: 0 0 0 5px;
+    float: right;
+}
+.new_film{
+    text-align: center;
+    margin-top: 20px;
+}
+.new{
+    display: flex;
+    justify-content: space-between;
+    height: 230px;
+    margin-left: 25px;
+    margin-top: 10px;
+    padding: 20px;
+}
+.paddington{
+    border-radius: 25px;
+    border: 5px solid rgb(192, 171, 38);
+    margin-right: 25px;
+    background-color: white;
+    padding: 10px;
+}
+.paddington_div{
+    
+    padding: 0 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 30px;
+}
+.heidi{
+    border-radius: 25px;
+    border: 5px solid rgb(192, 171, 38);
+    margin-right: 25px;
+    background-color: white;
+    padding: 10px;
+}
+.heidi_div{
+    height: 200px;
+    padding: 0 10px;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+    text-align: center;
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer_item{
+    width: 30%;
+}
+.footer_item h3{
+    border-bottom: 1px solid white;
+    padding-bottom: 10px;
+}
+.footer_item ul{
+    list-style-type: none;
+}
+.footer_item ul li a{
+    color: white;
+    text-decoration: none;
+}
+.footer_item ul li a:hover{
+    color: rgb(113, 146, 184);
+}
+.footer_img{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    gap: 10px;
+}
+.footer_img img:hover{
+    transform: rotate(360deg);
+    transition: transform 1s;
+    width: 30px;
+    height: 30px;
+}
+.footer_two{
+    text-align: center;
+}
+table, th, td{
+    text-align: left;
+}
+th{
+    width: 170px;
+    font-weight: normal;
+    opacity: 0.4;
+}
+.film_content{
+    display: flex;
+}
+.poster img, .poster iframe{
+    width: 302px;
+    margin-top: 50px;  
+}
+.poster img{
+    height: 420px;
+}
+.poster iframe{
+    height: 170px;
+}
+.review, .about_film{
+    margin-top: 30px;
+    width: 600px;
+}
+.review_header, .roles{
+    line-height: 2.25;
+    color:rgb(192, 171, 38)
+}
+.review{
+    color:red;
+    border:rgb(192, 171, 38);
+    border-radius: 25cm;
+}
+.header{
+    width: 800px;
+}
+.slide_content{
+    width: 200px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.rate{
+    margin-bottom: 50px;
+}
+.rate_mark{
+    font-weight: bold;
+    color:rgb(197, 184, 6);
+    font-size: 32px;
+}
+.poster iframe{
+    width: 560px;
+    height: 315px;
+}
+@media screen and (max-width: 1318px){
+    .menu{
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 1000px){
+    .menu{
+        justify-content: center;
+    }
+    .review p{
+        width: 150px;
+    }
+    .header{
+        width: 200px;
+        margin-left: 20px;
+    }
+    .review, .about_film{
+        width: 300px;
+    }
+    .formlabel{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    textarea{
+        height: 50px;
+        border-width: 2px;
+        width: 500px;
+    }
+    .contactform input{
+        width: 500px;
+        height: 50px;
+        border-width: 2px;
+    }
+    
+}
+
+@media screen and (max-width: 900px){
+    .paddington_div,
+    .heidi_div{
+        padding-top: 5px;
+    }
+}
+@media screen and (max-width: 850px){
+    .film_content{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 800px){
+    .paddington{
+        height: 300px;
+    }
+    .heidi{
+        height: 300px;
+    }
+    .new{
+        height: 400px;
+    }
+    .paddington_div,
+    .heidi_div{
+        padding-top: 5px;
+    }
+}
+@media screen and (max-width: 700px){
+    .paddington{
+        height: 360px;
+    }
+    .heidi{
+        height: 360px;
+    }
+    .new{
+        height: 400px;
+    }
+    .paddington_div,
+    .heidi_div{
+        padding-top: 5px;
+    }
+}
+@media screen and (max-width: 650px){
+    .film_content{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 600px){
+    .paddington{
+        height: 250px;
+        padding-top: 10px;
+    }
+    .heidi{
+        height: 250px;
+        padding-top: 10px;
+    }
+    .serial img{
+        height: 200px;
+        width: 130px;
+    }
+    .film img{
+        height: 200px;
+        width: 130px;
+    }
+    .new{
+        height: 350px;
+    }
+    main{
+        margin-left: 0;
+    }
+    .paddington_div{
+        padding: 0px;
+        font-size: 13px;
+    }
+    .heidi_div{
+        padding: 0px;
+        font-size: 13px;
+    }
+    .new{
+        height: 390px;
+    }
+    .officemap iframe{
+        height: 300px;
+        width: 300px;
+    }
+}
+@media screen and (max-width: 500px){
+    .paddington{
+        padding-top: 10px;
+        height: 400px;
+    }
+    .heidi{
+        padding-top: 10px;
+        height: 400px;
+    }
+    .new{
+        height: 500px;
+    }
+    .film_content{
+        flex-direction: column;
+        align-items: center;
+        display: flex;
+    }
+    .formlabel{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    textarea{
+        height: 30px;
+        border-width: 2px;
+        width: 200px;
+    }
+    .contactform input{
+        width: 200px;
+        height: 30px;
+        border-width: 2px;
+    }
+}
+@media screen and (max-width: 450px){
+    .about_film{
+        margin-left: 10px;
+        display: flex;
+    }
+    nav a{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 400px) { 
+
+    .about_film{
+        margin-left: 0;
+    }
+    .poster{
+        width: 135px;
+    }
+    header h1 { 
+        font-size: 28px; 
+    }
+
+    nav a {
+        margin: 0 8px;
+        font-size: 12px;
+    }
+
+    main img {
+        width: 30%;
+        height: auto;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .popular_film,
+    .popular_serial {
+        width: 100%;
+        float: none;
+    }
+
+    .new {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        margin-left: 0;
+    }
+    main{
+        margin-left: 0;
+    }
+    .paddington,
+    .heidi {
+        width: 80%;
+        margin-right: 0;
+        margin-bottom: 20px;
+        height: 250px;
+    }
+    .paddington_div{
+        padding: 0px;
+        font-size: 15px;
+        padding-top: 10px;
+    }
+    .heidi_div{
+        padding: 0px;
+        font-size: 15px;
+        padding-top: 10px;
+    }
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+    .trailer{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .footer_item {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .footer_img {
+        justify-content: center;
+    }
+    .film_content img{
+        height: 200px;
+        width: 130px;
+    }
+    .poster iframe{
+        height: 150px;
+        width: 300px;
+    }
+    .film_content{
+        align-items: center;
+    }
+    .header{
+        display: contents;
+    }
+    .review p{
+        width: 300px;
+    }
+    .slide_content{
+        margin-top: 20px;
+    }
+    .rate{
+        margin-bottom: 0px;
+    }
+    .contactform input{
+        width: 200px;
+        height: 30px;
+        border-width: 2px;
+    }
+    textarea{
+        height: 30px;
+        border-width: 2px;
+        width: 200px;
+    }
+    .formlabel{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
