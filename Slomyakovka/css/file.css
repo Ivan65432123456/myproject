@@ -1,0 +1,81 @@
+body{
+    margin: 0;
+    background-color: #DBD4C4;
+    background-image: url("../img/image9.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px 120px;
+    background-color: rgba(4, 4, 3, 0.58)
+}
+.logal{
+    width: 350px;
+}
+.nav{
+    display: flex;
+    gap: 30px;
+    font-size: 23px;
+}
+.nav a{
+    text-decoration: none;
+    color: white;
+}
+.logal2{
+    width: auto;
+    height: 30px;
+    display: block;
+    margin: 0 auto 15px auto;
+}
+.hero_container, p{
+    color: white;
+}
+.hero_container{
+    background-color: rgba(4, 4, 3, 0.58);
+    max-width: 500px;
+    height: 150px;
+    border-radius: 15px;
+    padding: 20px 50px;
+    text-align: center;
+}
+.hero{
+    height: 80vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 100px;
+    padding-top: 170px;
+}
+.features{
+    padding: 60px 20px;
+}
+.features_title{
+    text-align: center;
+    font-size: 41px;
+    color: #594D3D;
+    font-weight: 600;
+}
+.feature_grid{
+    max-width: 980px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    flex-wrap: wrap;
+}
+.card{
+    width: 320px;
+    background-color: #D9CEB4;
+    padding: 14px;
+}
+.card_media img{
+    width: 100%;
+}
