@@ -1,58 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/file.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Slomyakovka</title>
 </head>
-
-<body>
+<body class="body">
     <header class="header">
         <img src="img/Slomyakovka.svg" class="logal" alt="Slomyakovka logal">
         <nav class="nav">
-            <a href="#">Главная</a>
-            <a href="#">Донат</a>
-            <a href="#">Правила</a>
-            <a href="#">Контент</a>
+            <a href="index.html">Главная</a>
+            <a href="donate.html">Донат</a>
+            <a href="rules.html">Правила</a>
+            <a href="content.html">Контент</a>
         </nav>
     </header>
     <main class="hero">
+        <img src="img/icon_diamond.svg" class="icon_diamond icon_main">
+        <img src="img/icon_crepper_2.png" class="icon_crepper_2 icon_main">
         <div class="hero_container">
             <img src="img/Slomyakovka.svg" alt="Slomyakovka logal2" class="logal2">
             <h2>Твой мир.Твои правила</h2>
-            <p class="textmain">Выживание и анархия, ивенты, донат и жёсткие PvP-битвы.
+            <p class="textmain">Выживание и анархия, ивенты, донат и жёсткие PvP-битвы.</br>
                 Начни играть прямо сейчас и стань частью живого сервера.
             </p>
         </div>
     </main>
     <section class="features">
+        <img src="img/icon_golden_axe.svg" class="icon_golden_axe icon_main">
         <h2 class="features_title">Что у нас есть на сервере?</h2>
         <div class="features_grid">
             <article class="card">
                 <div class="card_media">
                     <img src="img/Stone.svg">
                     <div class="card_label">Выживание </div>
+                    <div class="card_body">
                       <p class="card_text"> Мистические сундуки, сундуки смерти, 
                         блинговый единорог и другие события.
                       </p>
-                      <p>Запрещён гриф и убийства новичков</p>
-              
+                      <p class="card_text2">🛡 Запрещён гриф и убийства новичков</p>
+                    </div>
+                </div>
             </article>
-
             <article class="card">
               <div class="card_media">
                 <img src="img/Copper.svg" alt="">
                   <div class="card_label">Анархия</div>
+                  <div class="card_body">
                     <p class="card_text"> Полная свобода действий и все ивенты из выживания. 
                       Здесь решает сила, стратегия и опыт.
                     </p>
-                    <p>Запрещён гриф и убийства новичков</p>
+                    <p class="card_text2">🛡 Разрешен гриф и PvP</p>
                   </div>
+                </div>
             </article>
-
+            <img src="img/icon_book_test.png" class="icon_book icon_main">
     </section>
+            <img src="img/icon_iron_picture_test.png" class="icon_iron_picture icon_main">
+    <footer class="footer">
+        <div class="footer_container">
+            <div class="footer_column">
+            <img class="footer_img" src="img/Slomyakovka.svg">
+                <p class="footer_text">MiNeCrAfT сервер с выжинием и анархией.Ивенты, донаты и активное сообщество.</p>
+                <a class="footer_bottom">Подключиться</a>
+            </div>
+
+            <div class="footer_column">
+                <h2>Быстрые ссылки</h2>
+                <a href="index.html">Главная</a>
+                <a href="donate.html">Донаты</a>
+                <a href="rules.html">Правила</a>
+                <a href="content.html">Контент</a>
+            </div>
+            <div class="footer_column">
+                <h2>Мы в соцсетях</h2>
+                    <a href="#"><img class="footer_us_img" src="img/WhatsApp.svg">WhatsApp</a>
+                    <a href="#"><img class="footer_us_img" src="img/Telegram.svg">Telegram</a>
+                    <a href="#"><img class="footer_us_img" src="img/Discord.svg">Discord</a>
+            </div>
+        </div>
+        <div class="footer_explain">2026 Solomyakovka - Все права защищены</div>
+    </footer>
 </body>
 
 </html>
